@@ -1,0 +1,2 @@
+https://www.w3resource.com/javascript/form/password-validation.php
+https://stackoverflow.com/questions/53629658/include-path-and-invalid-escape-character-in-vs-code/72411372

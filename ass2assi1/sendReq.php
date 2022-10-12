@@ -1,0 +1,50 @@
+<?php
+include_once('header.php');
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Send Requests</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="center">
+
+<div class="container mt-3">
+  <h3>Request Form</h3>
+  <p>Submit your concerns here!</p>
+    
+  <form action="sendReqSave.php" method="post" class="was-validated">
+    <div class="mb-3 mt-3">
+      <label for="studentemail" class="form-label">Email:</label>
+      <input type="email" class="form-control" id="studentemail" placeholder="Enter your email" name="studentemail" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="mb-3">
+      <label for="concern" class="form-label">Concern:</label>
+      <input type="text" class="form-control" id="concern" placeholder="Enter concern here" name="concern" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="mb-3 mt-3">
+        <label for="recipient" class="form-label">Recipient Email:</label>
+        <input type="email" class="form-control" id="recipient" placeholder="Enter the email of the person this concern is for" name="recipientemail" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
+      <label class="form-check-label" for="myCheck">I am satisfied with my input</label>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Check this checkbox to continue.</div>
+    </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
